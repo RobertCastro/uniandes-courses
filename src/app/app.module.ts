@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CourseModule } from './course/course.module';
 
+import { BookModule } from './book/book.module';
+import { EditorialModule } from './editorial/editorial.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { CourseModule } from './course/course.module';
   imports: [
     BrowserModule,
     CourseModule,
-    HttpClientModule
+    HttpClientModule,
+    BookModule,
+    EditorialModule
   ],
   providers: [],
   bootstrap: [
